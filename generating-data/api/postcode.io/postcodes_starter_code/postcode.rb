@@ -22,72 +22,72 @@ class Postcodesio
     postcode["result"]
   end
 
-  def get_single_postcode postcode
-    postcode.get_single_result["postcode"].gsub(' ','')
+  def get_single_post postcode
+    self.get_single_result(postcode)["postcode"].gsub(' ','')
   end
 
   def get_single_quality postcode
-    postcode.get_single_result["quality"]
+    self.get_single_result(postcode)["quality"]
   end
 
   def get_single_eastings postcode
-    postcode.get_single_result["eastings"]
+    self.get_single_result(postcode)["eastings"]
   end
 
   def get_single_northings postcode
-    postcode.get_single_result["northings"]
+    self.get_single_result(postcode)["northings"]
   end
 
   def get_single_country postcode
-    postcode.get_single_result["country"]
+    self.get_single_result(postcode)["country"]
   end
 
   def get_single_nhs postcode
-    postcode.get_single_result["nhs_ha"]
+    self.get_single_result(postcode)["nhs_ha"]
   end
 
   def get_single_longitude postcode
-    postcode.get_single_result["longitude"]
+    self.get_single_result(postcode)["longitude"]
   end
 
   def get_single_latitude postcode
-    postcode.get_single_result["latitude"]
+    self.get_single_result(postcode)["latitude"]
   end
 
   def get_single_parliamentary_constituency postcode
-    postcode.get_single_result["parliamentary_constituency"]
+    self.get_single_result(postcode)["parliamentary_constituency"]
   end
 
   def get_single_european_electoral_region postcode
-    postcode.get_single_result["european_electoral_region"]
+    self.get_single_result(postcode)["european_electoral_region"]
   end
 
   def get_single_primary_care_trust postcode
-    postcode.get_single_result["primary_care_trust"]
+    self.get_single_result(postcode)["primary_care_trust"]
   end
 
   def get_single_region postcode
-    postcode.get_single_result["region"]
+    self.get_single_result(postcode)["region"]
   end
 
   def get_single_parish postcode
-    postcode.get_single_result["parish"]
+    self.get_single_result(postcode)["parish"]
   end
 
   def get_single_lsoa postcode
-    postcode.get_single_result["lsoa"]
+    self.get_single_result(postcode)["lsoa"]
   end
 
   def get_single_msoa postcode
-    postcode.get_single_result["msoa"]
+    self.get_single_result(postcode)["msoa"]
   end
 
   def get_single_admin_district postcode
-    postcode.get_single_result["admin_district"]
+    self.get_single_result(postcode)["admin_district"]
   end
 
   def get_single_incode postcode
-    postcode.get_single_result["incode"]
+    self.get_single_result(postcode)["incode"]
   end
 
   # Multiple methods
@@ -97,80 +97,80 @@ class Postcodesio
   end
 
   def get_multiple_result(postcodes, index)
-    postcodes.get_multiple_results["result"]
+    self.get_multiple_results(postcodes, index)["result"]
   end
 
   def get_multiple_query(postcodes, index)
-    postcodes.get_multiple_results["query"]
+    self.get_multiple_results(postcodes, index)["query"]
   end
 
   def get_multiple_postcode(postcodes, index)
-    postcodes.get_multiple_result["postcode"].gsub(' ','')
+    self.get_multiple_result(postcodes, index)["postcode"].gsub(' ','')
   end
 
 
   def get_multiple_quality(postcodes, index)
-    postcodes.get_multiple_result["quality"]
+    self.get_multiple_result(postcodes, index)["quality"]
   end
 
   def get_multiple_easting(postcodes, index)
-    postcodes.get_multiple_result["easting"]
+    self.get_multiple_result(postcodes, index)["eastings"]
   end
 
   def get_multiple_northing(postcodes, index)
-    postcodes.get_multiple_result["northing"]
+    self.get_multiple_result(postcodes, index)["northings"]
   end
 
   def get_multiple_country(postcodes, index)
-    postcodes.get_multiple_result["country"]
+    self.get_multiple_result(postcodes, index)["country"]
   end
 
   def get_multiple_NHS(postcodes, index)
-    postcodes.get_multiple_result["nhs_ha"]
+    self.get_multiple_result(postcodes, index)["nhs_ha"]
   end
 
   def get_multiple_longitude(postcodes, index)
-    postcodes.get_multiple_result["longitude"]
+    self.get_multiple_result(postcodes, index)["longitude"]
   end
 
   def get_multiple_latitude(postcodes, index)
-    postcodes.get_multiple_result["latitude"]
+    self.get_multiple_result(postcodes, index)["latitude"]
   end
 
   def get_multiple_constituency(postcodes, index)
-    postcodes.get_multiple_result["parliamentary_constituency"]
+    self.get_multiple_result(postcodes, index)["parliamentary_constituency"]
   end
 
   def get_multiple_eer(postcodes, index)
-    postcodes.get_multiple_result["european_electoral_region"]
+    self.get_multiple_result(postcodes, index)["european_electoral_region"]
   end
 
   def get_multiple_pct(postcodes, index)
-    postcodes.get_multiple_result["primary_care_trust"]
+    self.get_multiple_result(postcodes, index)["primary_care_trust"]
   end
 
   def get_multiple_region(postcodes, index)
-    postcodes.get_multiple_result["region"]
+    self.get_multiple_result(postcodes, index)["region"]
   end
 
   def get_multiple_parish(postcodes, index)
-    postcodes.get_multiple_result["parish"]
+    self.get_multiple_result(postcodes, index)["parish"]
   end
 
   def get_multiple_lsoa(postcodes, index)
-    postcodes.get_multiple_result["lsoa"]
+    self.get_multiple_result(postcodes, index)["lsoa"]
   end
 
   def get_multiple_msoa(postcodes, index)
-    postcodes.get_multiple_result["msoa"]
+    self.get_multiple_result(postcodes, index)["msoa"]
   end
 
   def get_multiple_admin_district(postcodes, index)
-    postcodes.get_multiple_result["admin_district"]
+    self.get_multiple_result(postcodes, index)["admin_district"]
   end
 
   def get_multiple_incode(postcodes, index)
-    postcodes.get_multiple_result["incode"]
+    self.get_multiple_result(postcodes, index)["incode"]
   end
 
 end
